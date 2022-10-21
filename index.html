@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ethereum Social Contract</title>
+<style>
+* {box-sizing:border-box;}
+body, html { margin:0; padding:0; font-family:sans-serif; }
+header { padding: 20px; }
+header img.logo { width: 60px; vertical-align:middle; }
+article {border-bottom: 2px solid #ccc;}
+section {max-width: 760px; margin:40px auto; padding: 0 20px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>
+    <img class="logo" src="logo.png" alt="Ethereum Social Contract Logo">
+    Ethereum Social Contract
+  </h1>
+</header>
+<article>
+<section>
+<h2>Table of Contents</h2>
+<ol>
+<li><a href="#impetus">Why do we need a social contract?</a></li>
+<li>
+  <a href="#solution">What could provide these protections?</a>
+  <ol type="a">
+    <li><a href="#solution-actions">Course of Action</a></li>
+  </ol>
+</li>
+</ol>
+</section>
+</article>
+<article id="impetus">
+<section>
+  <h2>Why do we need a social contract?</h2>
+  <p>Theft and lost keys have no recourse in existing cryptocurrency systems.</p>
+  <p>If mass adoption is to come to this new transparent financial system, we must bring [at least] the same protections offered by traditional finance.</p>
+
+  <blockquote>
+    <p>Version 1 is United Kingdom Common Law. They don't have a constitution, this is all precedent going back for many years.</p>
+    <p>Version 2 is the US constitution.</p>
+    <p>Version 3 is the social smart contract which is a fusion of Rousseau's concept of the social contract and the smart contract. It's written in code. It's even more rigorous than the constitution.</p>
+  </blockquote>
+  <cite>&mdash;<a href="https://youtu.be/VeH7qKZr0WI?t=6740">Balaji Srinivasan on the Lex Friedman podcast</a></cite>
+</section>
+</article>
+<article id="solution">
+<section>
+  <h2>What could provide these protections?</h2>
+  <p>FTX exchange has released <a href="https://www.ftxpolicy.com/posts/possible-digital-asset-industry-standards">its vision for standards to protect users</a>: block sanctioned addresses and those that interact with them and in the case of hacks, rely on the thief offering 95% of their stolen funds back to the protocol as a kind of "good faith" bug-bounty.</p>
+  <p>These suggestions are extremely weak. A blocklist of sanctioned addresses cannot be updated fast enough to catch a thief in action. Relying on hackers to return funds is extremely inefficient and would be nonsensical if applied on a mass scale.</p>
+  <p>We propose a different plan that brings an opt-in justice system to ERC20 and ERC721 tokens by enabling abritrators the ability to perform token transfers within their jurisdiction without approval from the owning account.</p>
+  <p>An "arbitrable jurisdiction" is the set of tokens deposited into the wrapping contracts which enable arbitrary transfers by the arbitrator and their overseers.</p>
+  <h3 id="solution-actions">Course of Action</h3>
+  <ol>
+    <li>User deposits tokens into an arbitrable wrapper contract of their choosing. Many arbitrable versions of popular tokens may be available. Each arbitrator must compete on trust, speed and thoroughness of investigation, and fees.</li>
+    <li>Users may transfer wrapped tokens freely but must comply with the arbitrator's policies for withdrawing from the arbitrable jurisdiction.</li>
+  </ol>
+
+</section>
+</article>
+<article>
+<section>
+  <p>Contact: <a href="mailto:info@ethereumsocialcontract.org">info@ethereumsocialcontract.org</a></p>
+</section>
+</article>
