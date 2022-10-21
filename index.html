@@ -28,6 +28,7 @@ section {max-width: 760px; margin:40px auto; padding: 0 20px; }
   <a href="#solution">What could provide these protections?</a>
   <ol type="a">
     <li><a href="#solution-actions">Course of Action</a></li>
+    <li><a href="#solution-contracts">Arbitrable Contract Templates</a></li>
   </ol>
 </li>
 </ol>
@@ -59,6 +60,20 @@ section {max-width: 760px; margin:40px auto; padding: 0 20px; }
     <li>User deposits tokens into an arbitrable wrapper contract of their choosing. Many arbitrable versions of popular tokens may be available. Each arbitrator must compete on trust, speed and thoroughness of investigation, and fees.</li>
     <li>Users may transfer wrapped tokens freely but must comply with the arbitrator's policies for withdrawing from the arbitrable jurisdiction.</li>
   </ol>
+  <h3 id="solution-contracts">Arbitrable Contract Templates</h3>
+  <ul>
+    <li>
+      <a href="https://github.com/Ethereum-Social-Contract/arbitrable-wrappers/blob/main/contracts/ArbitrableWrappedERC20.sol"><code>ArbitrableWrappedERC20</code></a>
+      <p>ERC20 wrapper into which anybody can deposit.</p>
+      <ul><li>Only the specified arbitrator can withdraw tokens from the wrapper (i.e. holders must make a case to the arbitrator to leave)</li><li>The arbitrator may move tokens between accounts as they decide.</li></ul>
+    </li>
+    <li>
+      <a href="https://github.com/Ethereum-Social-Contract/arbitrable-wrappers/blob/main/contracts/ArbitrableWrappedERC721.sol"><code>ArbitrableWrappedERC721</code></a>
+      <p>ERC721 wrapper into which anybody can deposit an NFT from a specific collection.</p>
+      <ul><li>Doesn't support tokens from any collection because each collection may implement extensions.</li></ul>
+    </li>
+  </ul>
+  <p><a href="https://github.com/Ethereum-Social-Contract/arbitrable-wrappers">More contract templates are available in the repository...</a></p>
 
 </section>
 </article>
